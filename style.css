@@ -8,6 +8,7 @@
 }
 
 body{
+    height: 96vh;
     box-sizing: border-box;
     background-color: var(--color01);
     font-family: var(--font01)
@@ -31,6 +32,14 @@ section#container{
     border: 2px solid aquamarine;
     border-radius: 2pc;
     
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-content: center;
+
 }
 
 /*Div*/
