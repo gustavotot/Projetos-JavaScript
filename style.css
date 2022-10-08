@@ -9,6 +9,9 @@
 
 body{
     height: 96vh;
+    width: 98vw;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     background-color: var(--color01);
     font-family: var(--font01)
@@ -21,11 +24,18 @@ header {
     font-size: 4ch;
 }
 /*Main*/
+main{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-content: center;
+
+}
 
 /*Section*/
 section#container{
     display: block;
-    max-width: 500px;
+    min-width: 70%;
     margin: 4% auto;
     padding: 1px 5px;
     background-color: #4e4d4d;
@@ -34,13 +44,7 @@ section#container{
     
 }
 
-main{
-    height: 100%;
-    width: 100%;
-    display: grid;
-    align-content: center;
 
-}
 
 /*Div*/
 div{
@@ -51,33 +55,39 @@ div{
 }
 input[type=number]{
     background-color: var(--color01);
-    max-width: 100%;
-    height: 2pc;
-    border-radius: 2pc;
+    width: 80%;
+    height: 3em;
+    border-radius: 5pc;
     border: 1px solid var(--color01);
     text-align: center;
-    font-size: 1.1pc;
+    font-size: 1.5pc;
 
     font-family: var(--font01);
     color: var(--color02);
+}
+div.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    
 }
 button{
     background-color: #2b2b2b;
     color: var(--color02);
     font-family: var(--font01);
-    font-size: 2pc;
-
+    font-size:7vw;
     border: 0;
     border-radius: .2pc;
-    width: 3pc;
-    height: 3pc;
+    margin: 0 2%;
+    width: 7pc;
+    height: 7pc;
     
     transition: 0.5s;
 }
 button:hover{
    background-color: aquamarine;
    color: var(--color01);
-   border-radius: 2pc;
+   border-radius: 8pc;
 }
 p#res{
     padding: 1pc 0 0 0;
@@ -86,11 +96,17 @@ p#res{
 }
 div#result{
     transition: 1s;
-    font-size: 2pc;
+    font-size: 7vw;
     color: var(--color02);
 }
 
 
 @media only screen and (max-width: 430px){
-    
+    section#container{
+        width: 80%;
+    }
+    button{
+        width: 3pc;
+        height: 3pc;
+    }
 }
