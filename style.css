@@ -35,7 +35,7 @@ main{
 /*Section*/
 section#container{
     display: block;
-    min-width: 70%;
+    min-width: 30%;
     margin: 4% auto;
     padding: 1px 5px;
     background-color: #4e4d4d;
@@ -96,7 +96,7 @@ p#res{
 }
 div#result{
     transition: 1s;
-    font-size: 7vw;
+    font-size: 2vw;
     color: var(--color02);
 }
 
