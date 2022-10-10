@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --color01: #2b2b2b;
+    --color02: #f0f8ff;
+
+    --font01: Comfortaa;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--color01);
+    color: var(--color02);
+    font-family: var(--font01);
+}
+header{
+    text-align: center;
+    margin: 1em;
+    font-size: 2em;
+}
+main{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+/*Div*/
+div#container{
+    display: grid;
+    justify-content: space-between;
+    justify-items: center;
+}
+div#cron{
+    font-size: 4em;
+}
+
+div#btn{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 1em;
+}
+
+button{
+    border: none;
+    font-size: 1em;
+    color: var(--color02);
+    height: 4em;
+    width: 4em;
+    margin-top: 1em;
+    border-radius: .8em;
+    transition: 0.3s;
+}
+button:hover{
+    cursor: pointer;
+    
+    border-radius: 5em;
+}
+#start_btn{
+    background-color: rgb(60, 172, 60);
+}
+#start_btn:disabled{
+    background-color: rgb(107, 117, 107);
+    border-radius: 5em;
+}
+#pause_btn{
+    background-color: rgb(195, 166, 54);
+}
+#pause_btn:disabled{
+    background-color: rgb(136, 124, 72);
+    border-radius: 5em;
+}
+#stop_btn{
+    background-color: rgb(180, 64, 64);
+}
+#stop_btn:disabled{
+    background-color: rgb(129, 70, 70);
+    border-radius: 5em;
+}
