@@ -1,0 +1,47 @@
+*{margin: 0; padding: 0;}
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --color01: #2b2b2b;
+    --color02: #f0f8ff;
+
+    --font01: Comfortaa;
+    --font02: 'Courier New', Courier, monospace
+}
+
+body{
+    background-color: var(--color01);
+    color: var(--color02);
+    
+    font-family:var(--font02);
+
+}
+header{
+    text-align: center;
+    margin: 1em 0;
+}
+main{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+div#container{
+    display: grid;
+    grid-row-gap: 1em;
+    border-top: 1px solid var(--color02);
+    padding-top: 1em;
+
+}
+a{
+    font-family: var(--font02);
+    text-decoration: none;
+    color: var(--color02);
+    transition: 0.3s;
+    font-size: 2em;
+}
+
+a:hover{
+    color: yellowgreen;
+}
