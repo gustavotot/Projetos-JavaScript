@@ -98,7 +98,7 @@ p#res{
 }
 div#result{
     transition: 1s;
-    font-size: 2vw;
+    font-size: 2em;
     color: var(--color02);
 }
 
